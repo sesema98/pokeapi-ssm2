@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(135deg, #ffcb05 0%, #3b4cca 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem; /* más espacio entre cards */
+  justify-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 1.2rem;
+  width: 180px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+}
+
+.card-name {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.card-id {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.type {
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.type.fire { background-color: #f08030; }
+.type.water { background-color: #6890f0; }
+.type.grass { background-color: #78c850; }
+.type.electric { background-color: #f8d030; }
+.type.ice { background-color: #98d8d8; }
+.type.fighting { background-color: #c03028; }
+.type.poison { background-color: #a040a0; }
+.type.ground { background-color: #e0c068; }
+.type.flying { background-color: #a890f0; }
+.type.psychic { background-color: #f85888; }
+.type.bug { background-color: #a8b820; }
+.type.rock { background-color: #b8a038; }
+.type.ghost { background-color: #705898; }
+.type.dark { background-color: #705848; }
+.type.dragon { background-color: #7038f8; }
+.type.steel { background-color: #b8b8d0; }
+.type.fairy { background-color: #f0b6bc; }
+.type.normal { background-color: #a8a878; }
